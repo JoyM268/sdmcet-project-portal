@@ -85,4 +85,5 @@
     color: rgb(179, 20, 17);
     text-underline-offset: 3px;
     cursor: default;
+    pointer-events: none;
 }
