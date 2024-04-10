@@ -1,0 +1,80 @@
+.main{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 60px;
+    height: calc(100vh - 65px);
+    background-color: rgb(234, 219, 219);
+    font-family: 'jost';
+}
+
+.main #welcome{
+    font-family: 'jost';
+    display: block;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.main #website-name{
+    font-family: 'Gothic A1';
+    font-size: 45px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.main #description{
+    width: 400px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.nav-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    background-color:  rgb(149, 25, 23);
+    color: white;
+    font-family: 'jost';
+    transition: 0.7s;
+    font-weight: 500;
+}
+
+.nav-button:hover{
+    background-color: rgb(234, 219, 219);
+    color: rgb(149, 25, 23);
+}
+
+.button-icon{
+    filter: invert(1);
+    margin-left: 3px;
+    transition: 0.8s;
+}
+
+.about-us-button{
+    width: 165px;
+}
+
+.all-projects-button{
+    width: 210px;
+}
+
+.submit-project-button{
+    width: 290px;
+}
+
+.nav-button:hover .button-icon{
+    transform: translateX(8px);
+    filter: invert(0)
+}
