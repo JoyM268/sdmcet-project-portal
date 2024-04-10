@@ -2,6 +2,7 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
+    width: 100%;
     padding-top: 60px;
     height: calc(100vh - 65px);
     background-color: rgb(234, 219, 219);
@@ -25,10 +26,18 @@
 }
 
 .main #description{
-    width: 400px;
+    display: block;
     line-height: 25px;
     margin-bottom: 40px;
+    max-width: 400px;
     font-size: 18px;
+    text-wrap: wrap;
+}
+
+@media (max-width: 508px) {
+    .main #description{
+        max-width: 300px;
+    }
 }
 
 .nav-button{
