@@ -2,8 +2,8 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
-    padding-top: 60px;
-    height: calc(100vh - 65px);
+    padding-top: 130px;
+    height: 100%;
     background-color: rgb(234, 219, 219);
     font-family: 'jost';
 }
