@@ -31,10 +31,39 @@
     color: rgb(126, 19, 17);
 }
 
+.right-section .menu{
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .right-section .navigation{
+        display: none;
+    }
+
+    .right-section .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .right-section .menu:hover{
+        background-color: rgba(224, 224, 224, 0.277);
+    }
+
+    .right-section{
+        justify-content: end;
+    }
+}
+
 .right-section{
     display: flex;
     align-items: center;
-    width: 200  px;
+    width: 200px;
     height: 100%;
     text-wrap: nowrap;
 }
