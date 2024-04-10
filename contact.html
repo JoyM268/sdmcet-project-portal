@@ -1,0 +1,65 @@
+<!-- Contact Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img id="logo" src="assets/Homepage/logo.png">
+            <span class="name">Project Portal</span>
+        </div>
+        <div class="right-section">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="" id="active-nav">Contact</a>
+                <a href="">About Us</a>
+            </nav>
+            <div class="menu">
+                <img class="menu-icon" src="assets/Homepage/menu-icon.png  ">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="form-container">
+            <div class="title-container">
+                <span id="page-title">Contact Us</span>
+            </div>
+            <form class="form" method="" action="#">
+                <div class="container">
+                    <div class="input-container">
+                        <label>First Name</label>
+                        <input class="text-input" type="text" required placeholder="First Name">
+                    </div>
+                    <div class="input-container">
+                        <label>Last Name</label>
+                        <input required class="text-input" type="text" placeholder="Last Name">
+                    </div>
+                    <div class="input-container">
+                        <label>Email</label>
+                        <input class="email-input" type="email" required placeholder="E-mail">
+                    </div>
+                    <div class="input-container">
+                        <label>Phone No.</label>
+                        <input required class="phone-input" type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="input-container">
+                        <label>Message</label>
+                        <textarea class="message-input"  placeholder="Message" required></textarea>
+                    </div>
+                    <div class="button-container">
+                        <input class="button" type="submit" value="Submit">
+                        <input class="button" type="reset" value="Clear">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

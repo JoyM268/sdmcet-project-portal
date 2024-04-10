@@ -79,3 +79,10 @@
     text-decoration: underline;
     color: rgb(179, 20, 17);
 }
+
+#active-nav{
+    text-decoration: underline;
+    color: rgb(179, 20, 17);
+    text-underline-offset: 3px;
+    cursor: default;
+}

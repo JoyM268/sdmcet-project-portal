@@ -1,0 +1,136 @@
+.main{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'jost';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    max-width: 800px;
+    min-width: 250px;
+    flex: 1;
+    height: 560px;  
+    background-color: rgb(248, 248, 248);
+    border-radius: 50px;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(107, 107, 107);
+}
+
+#page-title{
+    margin-top: 30px;
+    font-weight: 700;
+    height: 50px;
+    text-wrap: nowrap;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    column-gap: 40px;
+    row-gap: 35px;
+}
+
+@media (max-width: 474px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .form-container{
+        height: 880px;
+    }
+
+    .main{
+        height: 140%;
+    }
+}
+
+@media (max-height: 440px) {
+    .main{
+        padding-top: 50%;
+    }
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label{
+    font-weight: 500;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.text-input, .email-input, .phone-input{
+    height: 45px;
+    border-radius: 15px;
+    outline: none;
+    border-style: solid;
+    padding: 6px;
+    font-size: 15px;
+}
+
+.text-input:focus, .phone-input:focus, .email-input:focus, .message-input:focus{
+    border-bottom: 3px solid rgb(126, 19, 17);
+}
+
+.message-input{
+    height: 150px;
+    border-radius: 15px;
+    outline: none;
+    border-style: solid;
+    border-width: 2px;
+    padding: 6px;
+    font-size: 15px;
+    resize: none;
+    min-width: none;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(170, 170, 170);
+    width: 75%;
+    cursor: pointer;
+    background-color: rgb(126, 19, 17);
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 7px rgba(126, 19, 17, 0.6);
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.button:active{
+    opacity: 0.6;
+}
