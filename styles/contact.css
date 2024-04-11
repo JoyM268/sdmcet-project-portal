@@ -134,3 +134,12 @@
 .button:active{
     opacity: 0.6;
 }
+
+.required:after {
+    content:" *";
+    color: red;
+}
+
+.check:focus:invalid{
+    border: 2px solid red;
+}

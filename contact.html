@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="icon" href="assets/Icon/icon.jpg">
+    <script src="script/header.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -22,11 +23,21 @@
                 <a href="contact.html" id="active-nav">Contact</a>
                 <a href="about.html">About Us</a>
             </nav>
-            <div class="menu">
-                <img class="menu-icon" src="assets/Homepage/menu-icon.png">
-            </div>
+            <a class="menu" id="menu-click" onclick="openSlideMenu()">
+                <img class="menu-icon" src="assets/Header/menu-icon.png">
+            </a>
+            <a class="menu" id="close-click" onclick="closeSlideMenu()">
+                <img class="close-icon" src="assets/Header/close-icon.png">
+            </a>
         </div>
     </header>
+    <div class="menu-list" id="menu-drop">
+        <a href="index.html">Home</a>
+        <a href="contact.html" id="active-menu">Contact</a>
+        <a href="">Submit Project</a>
+        <a href="">Project List</a>
+        <a href="about.html">About Us</a>
+    </div>
     <main class="main">
         <div class="form-container">
             <div class="title-container">
@@ -35,23 +46,23 @@
             <form class="form" method="" action="#">
                 <div class="container">
                     <div class="input-container">
-                        <label>First Name</label>
+                        <label class="required">First Name</label>
                         <input class="text-input" type="text" required placeholder="First Name">
                     </div>
                     <div class="input-container">
-                        <label>Last Name</label>
+                        <label class="required">Last Name</label>
                         <input required class="text-input" type="text" placeholder="Last Name">
                     </div>
                     <div class="input-container">
-                        <label>Email</label>
-                        <input class="email-input" type="email" required placeholder="E-mail">
+                        <label class="required">Email</label>
+                        <input class="email-input check" type="email" required placeholder="E-mail">
                     </div>
                     <div class="input-container">
-                        <label>Phone No.</label>
-                        <input required class="phone-input" type="tel" pattern="[0-9]{10}" maxlength="10"  title="10 digits number"  placeholder="Phone Number">
+                        <label class="required">Phone No.</label>
+                        <input required class="phone-input check" type="tel" pattern="[0-9]{10}" maxlength="10"  title="10 digits number"  placeholder="Phone Number">
                     </div>
                     <div class="input-container">
-                        <label>Message</label>
+                        <label class="required">Message</label>
                         <textarea class="message-input"  placeholder="Message" required></textarea>
                     </div>
                     <div class="button-container">

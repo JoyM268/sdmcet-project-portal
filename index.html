@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="icon" href="assets/Icon/icon.jpg">
+    <script src="script/header.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -23,11 +24,21 @@
                 <a href="contact.html">Contact</a>
                 <a href="about.html">About Us</a>
             </nav>
-            <div class="menu">
-                <img class="menu-icon" src="assets/Homepage/menu-icon.png  ">
-            </div>
+            <a class="menu" id="menu-click" onclick="openSlideMenu()">
+                <img class="menu-icon" src="assets/Header/menu-icon.png">
+            </a>
+            <a class="menu" id="close-click" onclick="closeSlideMenu()">
+                <img class="close-icon" src="assets/Header/close-icon.png">
+            </a>
         </div>
     </header>
+    <div class="menu-list" id="menu-drop">
+        <a href="index.html" id="active-menu">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="">Submit Project</a>
+        <a href="">Project List</a>
+        <a href="about.html">About Us</a>
+    </div>
     <main class="main">
         <div class="left-main">
             <div id="welcome-mesaage">
