@@ -49,7 +49,7 @@
 .menu-list{
     padding-top: 64px;
     background-color: rgb(141, 23, 21);
-    position: absolute;
+    position: fixed;
     width: 100%;
     right: 0px;
     height: 100%;
