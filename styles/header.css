@@ -73,7 +73,7 @@
     background-color: rgba(241, 164, 164, 0.703);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .right-section .navigation{
         display: none;
     }
@@ -95,13 +95,6 @@
 
     .right-section{
         justify-content: end;
-    }
-}
-
-
-@media (min-width: 400px) {
-    .right-section .menu{
-        display: none;  
     }
 }
 

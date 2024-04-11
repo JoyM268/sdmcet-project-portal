@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Project</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="assets/Icon/icon.jpg">
+    <script src="script/header.js" defer></script>
+    <script src="script/form.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img id="logo" src="assets/Homepage/logo.png">
+            <span class="name">Project Portal</span>
+        </div>
+        <div class="right-section">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
+            </nav>
+            <a class="menu" id="menu-click" onclick="openSlideMenu()">
+                <img class="menu-icon" src="assets/Header/menu-icon.png">
+            </a>
+            <a class="menu" id="close-click" onclick="closeSlideMenu()">
+                <img class="close-icon" src="assets/Header/close-icon.png">
+            </a>
+        </div>
+    </header>
+    <div class="menu-list" id="menu-drop">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="form.html" id="active-menu">Submit Project</a>
+        <a href="">Project List</a>
+        <a href="about.html">About Us</a>
+    </div>
+    <main class="main">
+        <div class="form-container">
+            <div class="form-box">
+                <div id="back-container">
+                    <img src="assets/Submit-Form/back-icon.png">
+                    <span>Back</span>
+                </div>
+                <div class="title-container">
+                    <span id="page-title">Project Form</span>
+                </div>
+                <form class="form" method="" action="#">
+                    <div class="container">
+                        <div class="input-container">
+                            <label class="required">Project Title</label>
+                            <input required class="input-box" type="text" placeholder="Project Title">
+                        </div>
+                        <div class="input-container">
+                            <label>Project Link</label>
+                            <input class="input-box" type="text" placeholder="Project Link">
+                        </div>
+                        <div class="input-container check">
+                            <label>Contact Email</label>
+                            <input class="input-box" type="email" placeholder="E-mail">
+                        </div>
+                        <div class="input-container">
+                            <label class="required">Member Count</label>
+                            <input required class="input-box" type="text" inputmode="numeric" pattern="[1-9]{1}" placeholder="Member Count" >
+                        </div>
+                        <div class="input-container">
+                            <label class="required">Member Names</label>
+                            <textarea required class="input-area" id="names-area" type="text" placeholder="Member Names"></textarea>
+                        </div>
+                        <div class="input-container check">
+                            <label class="required">Semester</label>
+                            <input required class="input-box" type="text" inputmode="numeric" pattern="[1-8]{1}" placeholder="Semester">
+                        </div>
+                        <div class="input-container">
+                            <label class="required">Project Description</label>
+                            <textarea required class="input-area"  placeholder="Description"></textarea>
+                        </div>
+                        <div class="button-container">
+                            <input class="button" type="submit" value="Submit">
+                            <input class="button" type="reset" value="Clear">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
