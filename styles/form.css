@@ -42,7 +42,7 @@
 }
 
 .form-container{
-    height: 97%;
+    height: 620px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -99,8 +99,12 @@
     }
 
     .main{
-        height: 170%;
+        height: 1200px
     }   
+
+    .form-container{
+        height: 1060px;
+    }
 }
 
 .input-container{
@@ -173,4 +177,8 @@
 
 .button:active{
     opacity: 0.6;
+}
+
+.gap{
+    height: 50px;
 }
