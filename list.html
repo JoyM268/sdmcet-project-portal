@@ -1,0 +1,77 @@
+<!-- Project Lists -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects List</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="icon" href="assets/Icon/icon.jpg">
+    <link rel="stylesheet" href="styles/list.css">
+    <script src="script/header.js" defer></script>
+    <script src="script/back-button.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="left-section">
+            <img id="logo" src="assets/Homepage/logo.png">
+            <span class="name">Project Portal</span>
+        </a>
+        <div class="right-section">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
+            </nav>
+            <a class="menu" id="menu-click" onclick="openSlideMenu()">
+                <img class="menu-icon" src="assets/Header/menu-icon.png">
+            </a>
+            <a class="menu" id="close-click" onclick="closeSlideMenu()">
+                <img class="close-icon" src="assets/Header/close-icon.png">
+            </a>
+        </div>
+    </header>
+    <div class="menu-list" id="menu-drop">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="form.html">Submit Project</a>
+        <a href="list.html" id="active-menu">Project List</a>
+        <a href="about.html">About Us</a>
+    </div>
+    <main class="main">
+        <div class="top-section">
+            <div id="back-container">
+                <img src="assets/Submit-Form/back-icon.png">
+                <span>Back</span>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div id="page-title">
+                <span>Project Lists</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th class="title">Title</th>
+                        <th class="description">Description</th>
+                        <th class="members">Members</th>
+                        <th class="semester">Semester</th>
+                        <th class="link">Link</th>
+                        <th class="email">E-mail</th>
+                    </tr>
+                    <tr>
+                        <td class="title">Project Portal</td>
+                        <td class="description">A platform to submit your project ideas and check out the projects your peers are doing</td>
+                        <td class="members">Joy Mascarenhas, Pratham Manabasannanavar</td>
+                        <td class="semester">4</td>
+                        <td class="link"><a href="https://joym268.github.io/WebTech-CTA/">https://joym268.github.io/WebTech-CTA/</a></td>
+                        <td class="email">abc@gamil.com</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+</html>
