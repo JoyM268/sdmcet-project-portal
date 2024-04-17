@@ -23,6 +23,7 @@
 
 .title-container{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgb(107, 107, 107);
@@ -142,4 +143,9 @@
 
 .check:focus:invalid{
     border: 2px solid red;
+}
+
+#back-container{
+    left: 20px;
+    top: 42px;
 }

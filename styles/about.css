@@ -46,6 +46,7 @@
 }
 
 .title-container{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,4 +90,9 @@
     text-decoration: underline;
     text-underline-offset: 2px;
     color: blue;
+}
+
+#back-container{
+    top: 34px;
+    left: 25px;
 }
