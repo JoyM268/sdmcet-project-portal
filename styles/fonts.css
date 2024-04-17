@@ -1,0 +1,233 @@
+    /* Jost Thin 100 Normal*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Thin.ttf) format('truetype');
+    font-optical-sizing: auto;
+    font-style: normal; 
+    font-weight: 100;
+}
+
+/* Jost Thin 100 Italic*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-ThinItalic.ttf) format('truetype');
+    font-optical-sizing: auto; 
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Jost ExtraLight 200 Normal*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-ExtraLight.ttf) format('truetype');
+    font-optical-sizing: auto;
+    font-style: normal; 
+    font-weight: 200;
+}
+
+/* Jost ExtraLight 200 Italic*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-ExtraLightItalic.ttf) format('truetype');
+    font-optical-sizing: auto;
+    font-style: italic; 
+    font-weight: 200;
+}
+
+/* Jost Light 300 Normal*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Light.ttf) format('truetype');
+    font-optical-sizing: auto; 
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Jost Light 300 Italic*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Light.ttf) format('truetype');
+    font-optical-sizing: auto;
+    font-style: italic; 
+    font-weight: 300;
+}
+
+/* Jost Regular 400 Normal*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Regular.ttf) format('truetype');
+    font-style: normal; 
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+/* Jost Regular 400 Italic*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Regular.ttf) format('truetype');
+    font-style: italic; 
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+/* Jost Medium 500 Normal*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+/* Jost Medium 500 Italic*/
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-MediumItalic.ttf) format('truetype');
+    font-style: italic;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+/* Jost SemiBold 600 Normal */
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-SemiBold.ttf) format('truetype');
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+/* Jost SemiBold 600 Italic */
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-SemiBoldItalic.ttf) format('truetype');
+    font-style: italic;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+/* Jost Bold 700 Normal */
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+/* Jost Bold 700 Italic */
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-BoldItalic.ttf) format('truetype');
+    font-style: italic;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+/* Jost ExtraBold 800 Normal */
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-ExtraBold.ttf) format('truetype');
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+
+/* Jost ExtraBold 800 Italic */
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-ExtraBoldItalic.ttf) format('truetype');
+    font-style: italic;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+
+/* Jost Black 900 Normal */
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Black.ttf) format('truetype');
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+/* Jost Black 900 Italic */
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-BlackItalic.ttf) format('truetype');
+    font-style: italic;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+/* Gothic A1 Thin 100 Normal */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-Thin.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Gothic A1 ExtraLight 200 Normal */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-ExtraLight.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 200;
+}
+
+/* Gothic A1 Light 300 Normal */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-Light.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Gothic A1 Regular 400 Normal */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Gothic A1 Medium 500 Normal */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Gothic A1 SemiBold 600 Normal */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-SemiBold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Gothic A1 Bold 700 Normal */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Gothic A1 ExtraBold 800 Normal */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-ExtraBold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* Gothic A1 Black 900 Normal */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-Black.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 900;
+}

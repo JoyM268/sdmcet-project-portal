@@ -23,6 +23,7 @@
     font-weight: 600;
     display: block;
     margin-bottom: 15px;
+    letter-spacing: -1px;
 }
 
 .main #description{

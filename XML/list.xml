@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="list.xsd">
+    <student id="1">
+        <title>Project Portal</title>
+        <description>A platform to submit your project ideas and check out the projects your peers are doing</description>
+        <members>Joy Mascarenhas, Pratham Manabasannanavar</members>
+        <semester>4</semester>
+        <link>https://joym268.github.io/WebTech-CTA/</link>
+        <email>abc@gamil.com</email>
+    </student>
+</list>
