@@ -88,13 +88,13 @@
 .nav-button:hover{
     background-color: rgb(234, 219, 219);
     color: rgb(149, 25, 23);
-    border: 1px solid rgb(149, 25, 23);
+    outline: 1px solid rgb(149, 25, 23);
 }
 
 .nav-button:active{
     background-color: rgb(234, 219, 219);
     color: rgb(149, 25, 23);
-    border: 1px solid rgb(149, 25, 23);
+    outline: 1px solid rgb(149, 25, 23);
     box-shadow: 0px 0px 10px rgb(149, 25, 23);
 }
 
