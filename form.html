@@ -53,32 +53,32 @@
                 <form class="form" method="" action="#">
                     <div class="container">
                         <div class="input-container">
-                            <label class="required">Project Title</label>
-                            <input required class="input-box" type="text" placeholder="Project Title">
+                            <label class="required" for="title">Project Title</label>
+                            <input required id="title" class="input-box" type="text" placeholder="Project Title">
                         </div>
                         <div class="input-container">
-                            <label>Project Link</label>
-                            <input class="input-box" type="text" placeholder="Project Link">
+                            <label for="link">Project Link</label>
+                            <input class="input-box" id="link" type="text" placeholder="Project Link">
                         </div>
                         <div class="input-container check">
-                            <label>Contact Email</label>
-                            <input class="input-box" type="email" placeholder="E-mail">
+                            <label for="email">Contact Email</label>
+                            <input class="input-box" id="email" type="email" placeholder="E-mail">
                         </div>
                         <div class="input-container">
-                            <label class="required">Member Count</label>
-                            <input required class="input-box" type="text" inputmode="numeric" pattern="[1-9]{1}" placeholder="Member Count" >
+                            <label class="required" for="count">Member Count</label>
+                            <input required class="input-box" id="count" type="text" inputmode="numeric" pattern="[1-9]{1}" placeholder="Member Count" >
                         </div>
                         <div class="input-container">
-                            <label class="required">Member Names</label>
-                            <textarea required class="input-area" id="names-area" type="text" placeholder="Member Names"></textarea>
+                            <label class="required" for="names">Member Names</label>
+                            <textarea required class="input-area names-area" id="names" type="text" placeholder="Member Names"></textarea>
                         </div>
                         <div class="input-container check">
-                            <label class="required">Semester</label>
-                            <input required class="input-box" type="text" inputmode="numeric" pattern="[1-8]{1}" placeholder="Semester">
+                            <label class="required" for="sem">Semester</label>
+                            <input required class="input-box" type="text" id="sem" inputmode="numeric" pattern="[1-8]{1}" placeholder="Semester">
                         </div>
                         <div class="input-container">
-                            <label class="required">Project Description</label>
-                            <textarea required class="input-area"  placeholder="Description"></textarea>
+                            <label class="required" for="description">Project Description</label>
+                            <textarea required class="input-area" id="description" placeholder="Description"></textarea>
                         </div>
                         <div class="button-container">
                             <input class="button" type="submit" value="Submit">
