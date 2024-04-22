@@ -120,3 +120,8 @@
     transform: translateX(8px);
     filter: invert(0)
 }
+
+.buttons-container a{
+    display: inline-block;
+    margin-bottom: 23px;
+}
