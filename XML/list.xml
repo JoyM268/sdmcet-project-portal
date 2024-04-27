@@ -9,4 +9,28 @@
         <link>https://joym268.github.io/WebTech-CTA/</link>
         <email>abc@gamil.com</email>
     </student>
+    <student id="2">
+        <title>Project Portal</title>
+        <description>A platform to submit your project ideas and check out the projects your peers are doing</description>
+        <members>Joy Mascarenhas, Pratham Manabasannanavar</members>
+        <semester>4</semester>
+        <link>https://joym268.github.io/WebTech-CTA/</link>
+        <email>abc@gamil.com</email>
+    </student>
+    <student id="3">
+        <title>Project Portal</title>
+        <description>A platform to submit your project ideas and check out the projects your peers are doing</description>
+        <members>Joy Mascarenhas, Pratham Manabasannanavar</members>
+        <semester>4</semester>
+        <link>https://joym268.github.io/WebTech-CTA/</link>
+        <email>abc@gamil.com</email>
+    </student>
+    <student id="4">
+        <title>Project Portal</title>
+        <description>A platform to submit your project ideas and check out the projects your peers are doing</description>
+        <members>Joy Mascarenhas, Pratham Manabasannanavar</members>
+        <semester>4</semester>
+        <link>https://joym268.github.io/WebTech-CTA/</link>
+        <email>abc@gamil.com</email>
+    </student>
 </list>

@@ -1,4 +1,4 @@
-<!ELEMENT list (student)>
+<!ELEMENT list (student+)>
 <!ELEMENT student (title,description,members,semester,link,email)>
 <!ATTLIST student id CDATA #REQUIRED>
 <!ELEMENT title (#PCDATA)>
