@@ -37,3 +37,7 @@ function closeSlideMenu(){
     document.getElementById('close-click').style.display = "none";
     enableScroll();
 }
+
+function backButton(){
+    window.history.back();
+}
