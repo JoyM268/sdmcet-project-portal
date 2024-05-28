@@ -1,10 +1,10 @@
 function validatePage()
 {
-    let firstName = document.querySelector("#fname").value;
-    let lastName = document.querySelector("#lname").value;
-    let email = document.querySelector("#email").value;
-    let phno = document.querySelector("#phno").value;
-    let message = document.querySelector("#message").value;
+    let firstName = document.getElementById("fname").value;
+    let lastName = document.getElementById("lname").value;
+    let email = document.getElementById("email").value;
+    let phno = document.getElementById("phno").value;
+    let message = document.getElementById("message").value;
     
     let namePattern = /^[a-zA-Z]+$/;
     let emailPattern =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
