@@ -16,7 +16,7 @@ function formValidation(){
     let sem = document.getElementById("sem").value.trim();
     let description = document.getElementById("description").value.trim();
 
-    let titlePattern = /^[a-zA-Z0-9]+$/;
+    let titlePattern = /^[a-zA-Z0-9-]+$/;
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let memCountPattern = /^(10|[1-9])$/;
     let memNamesPattern = /^[A-Za-z,\s]+$/;
@@ -27,16 +27,19 @@ function formValidation(){
         alert("Please provide a title for the project.");
         return false;
     }else if(!title.match(titlePattern)){
-        alert("The project title can only include letters and numbers.");
+        alert("The project title can only include letters, numbers and hyphens.");
         return false;
     }
     
-    if(!isValidURL(link) || link == ""){
+    if(!isValidURL(link) && link != ""){
         alert("Please enter a valid URL.");
         return false;
     }
     
-    if(!email.match(emailPattern) || email == ""){
+    if(email == ""){
+        alert("Please enter your email address.");
+        return false;
+    }else if(!email.match(emailPattern)){
         alert("Please enter a valid email address.");
         return false;
     }
