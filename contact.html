@@ -49,27 +49,27 @@
                 </div>
                 <span id="page-title">Contact Us</span>
             </div>
-            <form class="form" method="" action="">
+            <form class="form" method="" action="" onsubmit="return validatePage()">
                 <div class="container">
                     <div class="input-container">
                         <label class="required" for="fname">First Name</label>
-                        <input class="text-input" id="fname" type="text" required placeholder="First Name">
+                        <input class="text-input" id="fname" type="text" placeholder="First Name">
                     </div>
                     <div class="input-container">
                         <label class="required" for="lname">Last Name</label>
-                        <input required class="text-input" id="lname" type="text" placeholder="Last Name">
+                        <input class="text-input" id="lname" type="text" placeholder="Last Name">
                     </div>
                     <div class="input-container">
                         <label class="required" for="email">Email</label>
-                        <input class="email-input check" id="email" type="email" required placeholder="E-mail">
+                        <input class="email-input" id="email" type="email" placeholder="E-mail">
                     </div>
                     <div class="input-container">
                         <label class="required" for="phno">Phone No.</label>
-                        <input required class="phone-input check" id="phno" type="tel" pattern="[0-9]{10}" maxlength="10"  title="10 digits number"  placeholder="Phone Number">
+                        <input class="phone-input" id="phno" type="tel" maxlength="10"  title="10 digits number"  placeholder="Phone Number">
                     </div>
                     <div class="input-container">
                         <label class="required" for="message">Message</label>
-                        <textarea class="message-input" id="message"  placeholder="Message" required></textarea>
+                        <textarea class="message-input" id="message"  placeholder="Message"></textarea>
                     </div>
                     <div class="button-container">
                         <input class="button" type="submit" value="Submit">
@@ -80,4 +80,5 @@
         </div>
     </main>
 </body>
+<script src="script/contact.js"></script>
 </html>
