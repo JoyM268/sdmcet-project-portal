@@ -141,10 +141,6 @@
     color: red;
 }
 
-.check:focus:invalid{
-    border: 2px solid red;
-}
-
 #back-container{
     left: 20px;
     top: 42px;
