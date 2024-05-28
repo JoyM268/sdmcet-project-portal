@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/back.css">
     <link rel="icon" href="assets/Icon/icon.jpg">
     <script src="script/header.js" defer></script>
+    <script src="script/form.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -50,11 +51,11 @@
                 <div class="title-container">
                     <span id="page-title">Project Form</span>
                 </div>
-                <form class="form" method="" action="#">
+                <form class="form" method="POST" action="formValidation.php" onsubmit="return formValidation()">
                     <div class="container">
                         <div class="input-container">
                             <label class="required" for="title">Project Title</label>
-                            <input required id="title" class="input-box" type="text" placeholder="Project Title">
+                            <input id="title" class="input-box" type="text" placeholder="Project Title">
                         </div>
                         <div class="input-container">
                             <label for="link">Project Link</label>
@@ -62,23 +63,23 @@
                         </div>
                         <div class="input-container check">
                             <label for="email">Contact Email</label>
-                            <input class="input-box" id="email" type="email" placeholder="E-mail">
+                            <input class="input-box" id="email" type="text" placeholder="E-mail">
                         </div>
                         <div class="input-container">
                             <label class="required" for="count">Member Count</label>
-                            <input required class="input-box" id="count" type="text" inputmode="numeric" pattern="[1-9]{1}" maxlength="1"  placeholder="Member Count" >
+                            <input  class="input-box" id="count" type="text" placeholder="Member Count" >
                         </div>
                         <div class="input-container">
                             <label class="required" for="names">Member Names</label>
-                            <textarea required class="input-area names-area" id="names" type="text" placeholder="Member Names"></textarea>
+                            <textarea class="input-area names-area" id="names" type="text" placeholder="Member Names"></textarea>
                         </div>
                         <div class="input-container check">
                             <label class="required" for="sem">Semester</label>
-                            <input required class="input-box" type="text" id="sem" inputmode="numeric" pattern="[1-8]{1}" placeholder="Semester">
+                            <input class="input-box" type="text" id="sem" placeholder="Semester">
                         </div>
                         <div class="input-container">
                             <label class="required" for="description">Project Description</label>
-                            <textarea required class="input-area" id="description" placeholder="Description"></textarea>
+                            <textarea class="input-area" id="description" placeholder="Description"></textarea>
                         </div>
                         <div class="button-container">
                             <input class="button" type="submit" value="Submit">
