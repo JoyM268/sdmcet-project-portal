@@ -27,10 +27,10 @@ function formValidation(){
     if(!title.match(titlePattern)){
         alert("The title should only contain letters and numbers.");
         return false;
-    }else if(!isValidURL(link)){
+    }else if(!isValidURL(link) || link == ""){
         alert("Please enter a valid URL.");
         return false;
-    }else if(!email.match(emailPattern)){
+    }else if(!email.match(emailPattern) || email == ""){
         alert("Please enter a valid email address.");
         return false;
     }else if(!memCount.match(memCountPattern)){
