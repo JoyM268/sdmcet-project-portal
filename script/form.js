@@ -28,22 +28,22 @@ function formValidation(){
         alert("The title should only contain letters and numbers.");
         return false;
     }else if(!isValidURL(link)){
-        alert("Enter a valid URL");
+        alert("Please enter a valid URL.");
         return false;
     }else if(!email.match(emailPattern)){
-        alert("Enter a valid Email");
+        alert("Please enter a valid email address.");
         return false;
     }else if(!memCount.match(memCountPattern)){
-        alert("The memeber count should be between 1 - 10");
+        alert("The member count should be a number between 1 and 10.");
         return false;
     }else if(!memNames.match(memNamesPattern)){
-        alert("Member names can only contain letters, seperated by comma.");
+        alert("Member names should only contain letters and be separated by commas.");
         return false;
     }else if(!sem.match(semPattern)){
-        alert("Semester should be between 1 to 8");
+        alert("Semester should be a number between 1 and 8.");
         return false;
     }else if(!description.match(descPattern)){
-        alert("Project description is required");
+        alert("A Project description is required");
         return false;
     }
     return true;
