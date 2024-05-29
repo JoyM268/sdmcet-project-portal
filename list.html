@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="icon" href="assets/Icon/icon.jpg">
     <script src="script/header.js" defer></script>
+    <script src="script/list.js" defer></script>
 </head>
-<body>
+<body onload="storeData()">
     <header class="header">
         <a href="index.html" class="left-section">
             <img id="logo" src="assets/Header/logo.png">
@@ -50,8 +51,12 @@
             <div id="page-title">
                 <span>Project Lists</span>
             </div>
+            <div class="search">
+                <input type="text" class="search-bar" onkeyup="searchProject()" id="project-title" placeholder="Enter the project title">
+                <button class="search-icon" onclick="searchProject()"><img src="assets/Project List/search-icon.png"></button>
+            </div>
             <div class="table-container">
-                <table>
+                <table id="table">
                     <tr>
                         <th class="title">Title</th>
                         <th class="description">Description</th>
@@ -86,6 +91,14 @@
                     </tr>
                     <tr>
                         <td class="title">Robo Tutor</td>
+                        <td class="description">An AI-powered tutoring system personalized for individual learning styles.</td>
+                        <td class="members">Priya Menon, Aditya Kumar</td>
+                        <td class="semester">7</td>
+                        <td class="link"><a href="https://rob-tutor.com/">https://rob-tutor.com/</a></td>
+                        <td class="email">roboteach@learn.ai</td>
+                    </tr>
+                    <tr>
+                        <td class="title">GB</td>
                         <td class="description">An AI-powered tutoring system personalized for individual learning styles.</td>
                         <td class="members">Priya Menon, Aditya Kumar</td>
                         <td class="semester">7</td>
