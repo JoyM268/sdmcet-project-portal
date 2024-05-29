@@ -55,10 +55,12 @@ function showFilters(){
     let filterImg = document.getElementById("filter-img");
     let semesterSection = document.getElementById("semester-list");
     let memCount = document.getElementById("member-count");
+    let searchBox = document.getElementById("project-title");
     let filterSection = document.getElementById("filter-section");  
     if(!filterImg.classList.contains("rotate")){
         filterImg.classList.add("rotate"); 
         filterSection.style.display = "block";
+        searchBox.value = "";
 
     }else{
         filterImg.classList.remove("rotate");
@@ -66,6 +68,7 @@ function showFilters(){
         semesterSection.style.display = "none";
         memCount.style.display = "none";
         sorting.style.display = "none";
+        searchBox.value = "";
     }
 }
 
