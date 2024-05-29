@@ -53,7 +53,41 @@
             </div>
             <div class="search">
                 <input type="text" class="search-bar" onkeyup="searchProject()" id="project-title" placeholder="Enter the project title">
-                <button class="search-icon" onclick="searchProject()"><img src="assets/Project List/search-icon.png"></button>
+                <div class="filter">
+                    <button class="filter-icon" onclick="showFilters()"><img id="filter-img" src="assets/Project List/filter-icon.png"></button>
+                    <div class="filter-section" id="filter-section">
+                        <div class="filter-option none" onclick="setNone()">None</div>
+                        <div class="filter-option sem" onclick="showSemester()">Semester</div>
+                        <div class="filter-option count" onclick="showMemCount()">Member Count</div>
+                        <div class="filter-option sort" onclick="showSortingOptions()">Sort</div>
+                    </div>
+                    <div class="semester-list" id="semester-list">
+                        <div class="filter-option sem-number" onclick="searchSem(this)">1</div>
+                        <div class="filter-option sem-number" onclick="searchSem(this)">2</div>
+                        <div class="filter-option sem-number" onclick="searchSem(this)">3</div>
+                        <div class="filter-option sem-number" onclick="searchSem(this)">4</div>
+                        <div class="filter-option sem-number" onclick="searchSem(this)">5</div>
+                        <div class="filter-option sem-number" onclick="searchSem(this)">6</div>
+                        <div class="filter-option sem-number" onclick="searchSem(this)">7</div>
+                        <div class="filter-option sem-number" onclick="searchSem(this)">8</div>
+                    </div>
+                    <div class="member-count" id="member-count">
+                        <div class="filter-option member-number" onclick="searchMem(this)">1</div>
+                        <div class="filter-option member-number" onclick="searchMem(this)">2</div>
+                        <div class="filter-option member-number" onclick="searchMem(this)">3</div>
+                        <div class="filter-option member-number" onclick="searchMem(this)">4</div>
+                        <div class="filter-option member-number" onclick="searchMem(this)">5</div>
+                        <div class="filter-option member-number" onclick="searchMem(this)">6</div>
+                        <div class="filter-option member-number" onclick="searchMem(this)">7</div>
+                        <div class="filter-option member-number" onclick="searchMem(this)">8</div>
+                        <div class="filter-option member-number" onclick="searchMem(this)">9</div>
+                        <div class="filter-option member-number" onclick="searchMem(this)">10</div>
+                    </div>
+                    <div class="sorting" id="sorting">
+                        <div class="filter-option sort-option" onclick="sortAscending()">A to Z</div>
+                        <div class="filter-option sort-option" onclick="sortDescending()">Z to A</div>
+                    </div>
+                </div>
             </div>
             <div class="table-container">
                 <table id="table">
@@ -84,7 +118,7 @@
                     <tr>
                         <td class="title">Library Management</td>
                         <td class="description">A platform to track the books in library.</td>
-                        <td class="members">Ramesh, Mukesh</td>
+                        <td class="members">Ramesh, Mukesh, Rohit</td>
                         <td class="semester">8</td>
                         <td class="link"><a href="https://sdmcetlibrary.com/">https://sdmcetlibrary.com/</a></td>
                         <td class="email">bcd@gmail.com</td>
@@ -92,7 +126,7 @@
                     <tr>
                         <td class="title">IC Management</td>
                         <td class="description">A website to track the IC's in CSE Lab of SDMCET.</td>
-                        <td class="members">Rahul, Aditya</td>
+                        <td class="members">Rahul, Aditya, Abhi, jagdesh</td>
                         <td class="semester">6</td>
                         <td class="link"><a href="https://ICtracker.com/">https://ICtracker.com/</a></td>
                         <td class="email">bef@gmail.com</td>
@@ -100,7 +134,7 @@
                     <tr>
                         <td class="title">SDMCET Marks Portal</td>
                         <td class="description">Portal for students of SDMCET to view their marks.</td>
-                        <td class="members">Shankar, Aditya</td>
+                        <td class="members">Shankar, Aditya, Ganesh</td>
                         <td class="semester">7</td>
                         <td class="link"><a href="https://sdmcetmarks.com/">https://sdmcetmarks.com/</a></td>
                         <td class="email">def@gmail.com</td>
@@ -116,6 +150,8 @@
                 </table>
             </div>
         </div>
+        <br>
+        <br>
     </main>
 </body>
 </html>

@@ -105,11 +105,11 @@ td, th{
     display: flex;
     height: 50px;
     justify-content: center;
-    align-items: center;
     margin-bottom: 30px; 
+    column-gap: 3px;
 }
 
-.search-icon{
+.filter-icon{
     height: 50px;
     width: 80px;
     display: flex;
@@ -123,11 +123,11 @@ td, th{
     border-radius: 2px;
 }
 
-.search-icon:hover{
-    opacity: 0.8;
+.filter-icon:hover{
+    opacity: 0.9;
 }
 
-.search-icon img{
+.filter-icon img{
     width: 35px;
     filter: invert(1);
 }
@@ -141,7 +141,6 @@ td, th{
     font-size: 16px;
     border: none;
     border: 1px solid black;
-    border-right: none;
     border-radius: 2px;
 }
 
@@ -155,4 +154,58 @@ td, th{
     text-align: center;
     font-weight: 500px;
     padding: 15px;
+}
+
+.filter{
+    position: relative;
+}
+
+.filter-section{
+    position: absolute;
+    background-color: rgb(248, 248, 248);
+    border:1px solid rgb(28, 27, 27);
+    display: none;
+
+}
+
+.filter-option{
+    border-bottom: 1px solid rgb(28, 27, 27);
+    height: 60px;
+    width: 79px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.filter-option:hover{
+    background-color: rgb(213, 210, 210);
+}
+
+.sem{
+    height: 40px;
+}
+
+.sort{
+    height: 40px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.semester-list, .member-count, .sorting{
+    background-color: rgb(248, 248, 248);
+    border:1px solid rgb(28, 27, 27);
+    display: none;
+}
+
+.sem-number, .member-number, .sort-option{
+    border-bottom: 1px solid rgb(28, 27, 27);
+    height: 34px;
+    width: 79px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.none{
+    height: 40px;
 }
