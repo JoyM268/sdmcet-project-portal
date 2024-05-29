@@ -7,7 +7,7 @@ var email = [];
 
 function storeInArray(obj, arr){
     for(let i = 0; i < obj.length; i++){
-        arr.push(obj[i].innerHTML);
+        arr.push(obj[i].innerText);
     }
 }
 
