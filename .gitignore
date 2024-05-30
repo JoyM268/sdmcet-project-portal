@@ -1,1 +1,5 @@
- *.vscode
+#Ignore .vscode folder
+*.vscode
+
+#Ignore .json files
+*.json
