@@ -1,9 +1,9 @@
-var title = [];
-var description = [];
-var member = [];
-var semester = [];
-var link = [];
-var email = [];
+let title = [];
+let description = [];
+let member = [];
+let semester = [];
+let link = [];
+let email = [];
 
 function storeInArray(obj, arr){
     for(let i = 0; i < obj.length; i++){
