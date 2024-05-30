@@ -51,35 +51,35 @@
                 <div class="title-container">
                     <span id="page-title">Project Form</span>
                 </div>
-                <form class="form" method="POST" action="formValidation.php" onsubmit="return formValidation()">
+                <form class="form" method="post" action="https://localhost/form.php" onsubmit="return formValidation()">
                     <div class="container">
                         <div class="input-container">
                             <label class="required" for="title">Project Title</label>
-                            <input id="title" class="input-box" type="text" placeholder="Project Title">
+                            <input id="title" class="input-box" type="text" name="title" placeholder="Project Title">
                         </div>
                         <div class="input-container">
                             <label for="link">Project Link</label>
-                            <input class="input-box" id="link" type="text" placeholder="Project Link">
+                            <input class="input-box" id="link" type="text" name="link" placeholder="Project Link">
                         </div>
                         <div class="input-container check">
                             <label  class="required" for="email">Contact Email</label>
-                            <input class="input-box" id="email" type="text" placeholder="E-mail">
+                            <input class="input-box" id="email" type="text" name="email" placeholder="E-mail">
                         </div>
                         <div class="input-container">
                             <label class="required" for="count">Member Count</label>
-                            <input  class="input-box" id="count" type="text" placeholder="Member Count" >
+                            <input  class="input-box" id="count" type="text" name="count" placeholder="Member Count" >
                         </div>
                         <div class="input-container">
                             <label class="required" for="names">Member Names</label>
-                            <textarea class="input-area names-area" id="names" type="text" placeholder="Member Names"></textarea>
+                            <textarea class="input-area names-area" id="names" type="text" name="names" placeholder="Member Names"></textarea>
                         </div>
                         <div class="input-container check">
                             <label class="required" for="sem">Semester</label>
-                            <input class="input-box" type="text" id="sem" placeholder="Semester">
+                            <input class="input-box" type="text" id="sem" name="sem" placeholder="Semester">
                         </div>
                         <div class="input-container">
                             <label class="required" for="description">Project Description</label>
-                            <textarea class="input-area" id="description" placeholder="Description"></textarea>
+                            <textarea class="input-area" id="description" name="description" placeholder="Description"></textarea>
                         </div>
                         <div class="button-container">
                             <input class="button" type="submit" value="Submit">
