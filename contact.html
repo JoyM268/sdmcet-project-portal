@@ -49,27 +49,27 @@
                 </div>
                 <span id="page-title">Contact Us</span>
             </div>
-            <form class="form" method="POST" action="" onsubmit="return validatePage()">
+            <form class="form" method="post" action="https://localhost/contact.php" onsubmit="return validatePage()">
                 <div class="container">
                     <div class="input-container">
                         <label class="required" for="fname">First Name</label>
-                        <input class="text-input" id="fname" type="text" placeholder="First Name">
+                        <input class="text-input" id="fname" name="fname" type="text" placeholder="First Name">
                     </div>
                     <div class="input-container">
                         <label for="lname">Last Name</label>
-                        <input class="text-input" id="lname" type="text" placeholder="Last Name">
+                        <input class="text-input" id="lname" name="lname" type="text" placeholder="Last Name">
                     </div>
                     <div class="input-container">
                         <label class="required" for="email">Email</label>
-                        <input class="email-input" id="email" placeholder="E-mail">
+                        <input class="email-input" id="email" name="email" placeholder="E-mail">
                     </div>
                     <div class="input-container">
                         <label class="required" for="phno">Phone No.</label>
-                        <input class="phone-input" id="phno" placeholder="Phone Number">
+                        <input class="phone-input" id="phno" name="phno" placeholder="Phone Number">
                     </div>
                     <div class="input-container">
                         <label class="required" for="message">Message</label>
-                        <textarea class="message-input" id="message"  placeholder="Message"></textarea>
+                        <textarea class="message-input" id="message" name="message" placeholder="Message"></textarea>
                     </div>
                     <div class="button-container">
                         <input class="button" type="submit" value="Submit">
