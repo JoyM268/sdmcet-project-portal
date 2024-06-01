@@ -125,3 +125,34 @@
     display: inline-block;
     margin-bottom: 23px;
 }
+
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Regular.ttf) format('truetype');
+    font-style: normal; 
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Gothic A1';
+    src: url(../assets/fonts/Gothic_A1/GothicA1-SemiBold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
