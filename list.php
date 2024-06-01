@@ -1,4 +1,21 @@
 <!-- Project Lists -->
+<?php
+    $url = "localhost";
+    $usrname = "root";
+    $pass = "";
+    $database = "ProjectPortal";
+
+    $conn = new mysqli($url, $usrname, $pass, $database);
+
+    if($conn->connect_error){
+        die("Connection Failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT Title, Link, Email, MemberNames, Semester, Description FROM ProjectList";
+
+    $result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +54,7 @@
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="form.html">Submit Project</a>
-        <a href="list.html" id="active-menu">Project List</a>
+        <a href="list.php" id="active-menu">Project List</a>
         <a href="about.html">About Us</a>
     </div>
     <main class="main">
@@ -99,54 +116,25 @@
                         <th class="link">Link</th>
                         <th class="email">E-mail</th>
                     </tr>
-                    <tr>
-                        <td class="title">Project Portal</td>
-                        <td class="description">A platform to submit your project ideas and check out the projects your peers are doing</td>
-                        <td class="members">Joy Mascarenhas, Pratham Manabasannanavar</td>
-                        <td class="semester">4</td>
-                        <td class="link"><a href="https://joym268.github.io/WebTech-CTA/">https://joym268.github.io/WebTech-CTA/</a></td>
-                        <td class="email">abc@gamil.com</td>
-                    </tr>
-                    <tr>
-                        <td class="title">Faculty Work Manager</td>
-                        <td class="description">Web application to track faculty work load.</td>
-                        <td class="members">Abdul, Bhanu</td>
-                        <td class="semester">4</td>
-                        <td class="link"><a href="https://github.com/heyitsELECTRO/wt_college">https://github.com/heyitsELECTRO/wt_college</a></td>
-                        <td class="email">abdul@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td class="title">Library Management</td>
-                        <td class="description">A platform to track the books in library.</td>
-                        <td class="members">Ramesh, Mukesh, Rohit</td>
-                        <td class="semester">8</td>
-                        <td class="link"><a href="https://sdmcetlibrary.com/">https://sdmcetlibrary.com/</a></td>
-                        <td class="email">bcd@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td class="title">IC Management</td>
-                        <td class="description">A website to track the IC's in CSE Lab of SDMCET.</td>
-                        <td class="members">Rahul, Aditya, Abhi, jagdesh</td>
-                        <td class="semester">6</td>
-                        <td class="link"><a href="https://ICtracker.com/">https://ICtracker.com/</a></td>
-                        <td class="email">bef@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td class="title">SDMCET Marks Portal</td>
-                        <td class="description">Portal for students of SDMCET to view their marks.</td>
-                        <td class="members">Shankar, Aditya, Ganesh</td>
-                        <td class="semester">7</td>
-                        <td class="link"><a href="https://sdmcetmarks.com/">https://sdmcetmarks.com/</a></td>
-                        <td class="email">def@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td class="title">SDMCET Faculty</td>
-                        <td class="description">Website to give information about faculty in SDMCET.</td>
-                        <td class="members">Mark, Gourav</td>
-                        <td class="semester">7</td>
-                        <td class="link"><a href="https://sdmcetfaculty/">https://sdmcetfaculty/</a></td>
-                        <td class="email">gdr@gmail.com</td>
-                    </tr>
+                    
+                    <?php
+                        if($result->num_rows > 0){
+                            while($row = $result->fetch_assoc()){
+                                echo "<tr>";
+                                echo "<td class='title'>".$row["Title"]."</td>";
+                                echo "<td class='description'>".$row["Description"]."</td>";
+                                echo "<td class='members'>".$row["MemberNames"]."</td>";
+                                echo "<td class='semester'>".$row["Semester"]."</td>";
+                                echo "<td class='link'><a href=".$row["Link"].">".$row["Link"]."</a></td>";
+                                echo "<td class='email'>".$row["Email"]."</td>";
+                                echo "</tr>";
+                            }
+                        }else{
+                            echo "<tr><td class='not-found' colspan='6'>Project not Found.</td></tr>";
+                        }
+
+                        $conn -> close();
+                    ?>
                 </table>
             </div>
         </div>
