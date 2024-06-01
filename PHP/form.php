@@ -10,7 +10,7 @@
     $servername = "localhost";
     $usrname = "root";
     $password = "";
-    $database = "projectportal";
+    $database = "ProjectPortal";
 
     $conn = new mysqli($servername, $usrname, $password, $database);
 
@@ -18,7 +18,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "insert into projectlist (Title, Link, Email, MemberCount, MemberNames, Semester, Description) values ('$title', '$link', '$email', $count, '$names', $sem, '$description')";
+    $sql = "insert into ProjectList (Title, Link, Email, MemberCount, MemberNames, Semester, Description) values ('$title', '$link', '$email', $count, '$names', $sem, '$description')";
     if($conn->query($sql) === TRUE){
         echo "The form was submitted successfully";
     }else{

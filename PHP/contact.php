@@ -12,7 +12,7 @@
     
     $conn = new mysqli($url, $usrname, $password, $database);
     if($conn->connect_error){
-        echo "Connection Failed ". $conn->connect_error;
+        die("Connection failed: " . $conn->connect_error);
     }
 
     $sql = "INSERT INTO ContactData (First_Name, Last_Name, Email, Phone_No, Message) VALUES ('$fName', '$lName', '$email', $phno, '$message')";
