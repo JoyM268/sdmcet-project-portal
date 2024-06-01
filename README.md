@@ -16,4 +16,4 @@
         </ul>
     </li>
 </ul>
-<b style="margin-left:10px">Website: </b><a href="https://joym268.github.io/WebTech-CTA/">Click Here</a> (Not yet completed)
+<b style="margin-left:10px">Website: </b><a href="http://sdmcetprojectportal.rf.gd/">Click Here</a> (Not yet completed)
