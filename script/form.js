@@ -16,7 +16,7 @@ function formValidation(){
     let sem = document.getElementById("sem").value.trim();
     let description = document.getElementById("description").value.trim();
 
-    let titlePattern = /^[a-zA-Z0-9-]+$/;
+    let titlePattern = /^[a-zA-Z0-9-\s]+$/;
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let memCountPattern = /^(10|[1-9])$/;
     let memNamesPattern = /^[A-Za-z,\s]+$/;
