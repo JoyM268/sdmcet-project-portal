@@ -27,7 +27,7 @@ function formValidation(){
         alert("Please provide a title for the project.");
         return false;
     }else if(!title.match(titlePattern)){
-        alert("The project title can only include letters, numbers and hyphens.");
+        alert("The project title can only include letters, numbers, space and hyphens.");
         return false;
     }
     
