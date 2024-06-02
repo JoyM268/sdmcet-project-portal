@@ -42,13 +42,6 @@ a{
     font-weight: 700;
 }
 
-@font-face{
-    font-family: 'Gothic A1';
-    src: url(../assets/fonts/Gothic_A1/GothicA1-SemiBold.ttf) format('truetype');
-    font-style: normal;
-    font-weight: 600;
-}
-
 /* Header */
 .header{
     background-color: rgb(248, 248, 248);
