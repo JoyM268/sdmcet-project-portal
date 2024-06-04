@@ -20,7 +20,7 @@
 
     $sql = "insert into ProjectList (Title, Link, Email, MemberCount, MemberNames, Semester, Description) values ('$title', '$link', '$email', $count, '$names', $sem, '$description')";
     if($conn->query($sql) === TRUE){
-        echo "The form was submitted successfully";
+        readfile("../formsubmitted.html");
     }else{
         echo "The form submission failed";
     }

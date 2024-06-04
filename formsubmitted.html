@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted</title>
+    <link rel="icon" href="assets/Icon/icon.jpg">
+    <script src="script/header.js" defer></script>
+    <link rel="stylesheet" href="styles/formsubmitted.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="left-section">
+            <img id="logo" src="assets/Header/logo.png">
+            <span class="name">Project Portal</span>
+        </a>
+        <div class="right-section">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
+            </nav>
+            <a class="menu" id="menu-click" onclick="openSlideMenu()">
+                <img class="menu-icon" src="assets/Header/menu-icon.png">
+            </a>
+            <a class="menu" id="close-click" onclick="closeSlideMenu()">
+                <img class="close-icon" src="assets/Header/close-icon.png">
+            </a>
+        </div>
+    </header>
+    <div class="menu-list" id="menu-drop">
+        <a href="index.html" id="active-menu">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="form.html">Submit Project</a>
+        <a href="list.php">Project List</a>
+        <a href="about.html">About Us</a>
+    </div>
+    <main class="main">
+        <div class="navigation-options">
+            <img class="submitted-icon" src="assets/Form Submitted/submitted-icon.png">
+            <div class="message">
+                <span class="message-subject">Thank You</span>
+                <span class="message-description">The form was submitted successfully</span>
+            </div>
+            <a href="list.php" class="navigation-section">Check out others projects</a>
+            <a href="index.html" class="navigation-section">Back to Home</a>
+        </div>
+    </main>
+</body>
+</html>
