@@ -17,7 +17,7 @@
 
     $sql = "INSERT INTO ContactData (First_Name, Last_Name, Email, Phone_No, Message) VALUES ('$fName', '$lName', '$email', $phno, '$message')";
     if($conn->query($sql) === TRUE){
-        echo "The message was submitted successfully";
+        header('Location: ../feedbacksubmitted.html');
     }else{
         echo "The message submission failed";
     }
