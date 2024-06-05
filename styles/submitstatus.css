@@ -207,12 +207,13 @@ a{
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 4px;
+    text-align: center;
 }
 
 .message-description{
     font-family: Helvetica;
     font-size: 17px;
-
+    text-align: center;
 }
 
 .navigation-options{
