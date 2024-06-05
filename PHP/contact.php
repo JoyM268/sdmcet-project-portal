@@ -19,7 +19,7 @@
     if($conn->query($sql) === TRUE){
         header('Location: ../feedbacksubmitted.html');
     }else{
-        echo "The message submission failed";
+        header('Location: ../feedbackfailed.html');
     }
 
     $conn->close();

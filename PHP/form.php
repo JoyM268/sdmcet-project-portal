@@ -22,7 +22,7 @@
     if($conn->query($sql) === TRUE){
         header('Location: ../formsubmitted.html');
     }else{
-        echo "The form submission failed";
+        header('Location: ../formfailed.html');
     }
 
     $conn->close();
