@@ -23,6 +23,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects List</title>
     <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
     <link rel="icon" href="assets/Icon/icon.jpg">
     <script src="script/header.js" defer></script>
     <script src="script/list.js" defer></script>

@@ -1,0 +1,24 @@
+/* Fonts */
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Regular.ttf) format('truetype');
+    font-style: normal; 
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: 'jost';
+    src: url(../assets/fonts/Jost/Jost-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
