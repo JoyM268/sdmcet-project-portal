@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/header.css">    
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" href="assets/Icon/icon.jpg">
+    <script src="script/header.js" defer></script>
+    <script src="script/login.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="left-section">
+            <img id="logo" src="assets/Header/logo.png">
+            <span class="name">Project Portal</span>
+        </a>
+        <div class="right-section">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html" id="active-nav">Login</a>
+            </nav>
+            <a class="menu" id="menu-click" onclick="openSlideMenu()">
+                <img class="menu-icon" src="assets/Header/menu-icon.png">
+            </a>
+            <a class="menu" id="close-click" onclick="closeSlideMenu()">
+                <img class="close-icon" src="assets/Header/close-icon.png">
+            </a>    
+        </div>
+    </header>   
+    <div class="menu-list hide" id="menu-drop">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="form.html">Submit Project</a>
+        <a href="list.html">Project List</a>
+        <a href="login.html" id="active-menu">Admin Login</a>
+        <a href="about.html">About Us</a>
+    </div>
+    <main class="main">
+        <div class="container">
+            <div class="container-title">
+                <span id="page-title">Admin Login</span>
+            </div>
+            <form action="php/login.php" method="post" onsubmit="return loginValidation()">
+                <div class="form-container">
+                    <div class="input-container">
+                        <label class="required" for="usr">Username</label>
+                        <input id="usr" class="input-box" type="text" name="usr" placeholder="Username">
+                    </div>
+                    <div class="input-container">
+                        <label class="required" for="pass">Password</label>
+                        <input class="input-box" id="pass" type="password" name="pass" placeholder="Password">
+                    </div>
+                    <div class="button-container">
+                        <input class="button" type="submit" value="Login">
+                        <input class="button" type="reset" value="Clear">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
