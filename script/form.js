@@ -8,20 +8,20 @@ function isValidURL(url){
 }
 
 function formValidation(){
-    let title = document.getElementById("title").value.trim();
-    let link = document.getElementById("link").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let memCount = document.getElementById("count").value.trim();
-    let memNames = document.getElementById("names").value.trim();
-    let sem = document.getElementById("sem").value.trim();
-    let description = document.getElementById("description").value.trim();
+    var title = document.getElementById("title").value.trim();
+    var link = document.getElementById("link").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var memCount = document.getElementById("count").value.trim();
+    var memNames = document.getElementById("names").value.trim();
+    var sem = document.getElementById("sem").value.trim();
+    var description = document.getElementById("description").value.trim();
 
-    let titlePattern = /^[a-zA-Z0-9-\s]+$/;
-    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let memCountPattern = /^(10|[1-9])$/;
-    let memNamesPattern = /^[A-Za-z,\s]+$/;
-    let semPattern = /^[1-8]$/;
-    let descPattern = /[A-Za-z]/
+    var titlePattern = /^[a-zA-Z0-9-\s]+$/;
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var memCountPattern = /^(10|[1-9])$/;
+    var memNamesPattern = /^[A-Za-z,\s]+$/;
+    var semPattern = /^[1-8]$/;
+    var descPattern = /[A-Za-z]/
 
     if(title == ""){
         alert("Please provide a title for the project.");
