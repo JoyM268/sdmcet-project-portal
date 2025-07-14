@@ -9,12 +9,13 @@ You can view the live website here: [https://sdmcetprojectportal.rf.gd/](https:/
 
 
 ## Table of Contents
-1. [Features](#features)
-2. [Screenshots](#screenshots)
-3. [Installation & Usage](#installation--usage)
-4. [SQL Schema](#sql-schema)
-5. [Team Members](#team-members)
-6. [Contact](#contact)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation & Usage](#installation--usage)
+- [SQL Schema](#sql-schema)
+- [Team Members](#team-members)
+- [License](#license)
+- [Contact](#contact)
 
 
 ## Features
@@ -90,6 +91,11 @@ CREATE TABLE ContactData (
 ## Team Members
 - [Joy Mascarenhas](https://github.com/JoyM268)
 - [Pratham Manabasannanavar](https://github.com/PrathamManabasannanavar)
+
+
+## License
+
+This project is licensed under the [MIT License](https://github.com/JoyM268/sdmcet-project-portal/blob/main/LICENSE).
 
 
 ## Contact
