@@ -111,7 +111,7 @@
 .right-section{
     display: flex;
     align-items: center;
-    width: 180px;
+    width: 200px;
     height: 100%;
     text-wrap: nowrap;
 }

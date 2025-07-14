@@ -1,9 +1,0 @@
-<!ELEMENT list (student+)>
-<!ELEMENT student (title,description,members,semester,link,email)>
-<!ATTLIST student id CDATA #REQUIRED>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT description (#PCDATA)>
-<!ELEMENT members (#PCDATA)>
-<!ELEMENT semester (#PCDATA)>
-<!ELEMENT link (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
