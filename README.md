@@ -1,14 +1,12 @@
 # SDMCET Project Portal
 
-A web application to submit, manage, and explore student project ideas. The portal allows students to submit their projects, view projects of their peers, and contact the administrators.
+A web application to submit, manage, and explore student project ideas. The portal allows students to submit their projects and view projects of their peers.
 
----
 
 ## Live Website
 
 You can view the live website here: [https://sdmcetprojectportal.rf.gd/](https://sdmcetprojectportal.rf.gd/)
 
----
 
 ## Table of Contents
 1. [Features](#features)
@@ -18,7 +16,6 @@ You can view the live website here: [https://sdmcetprojectportal.rf.gd/](https:/
 5. [Team Members](#team-members)
 6. [Contact](#contact)
 
----
 
 ## Features
 - Submit new project ideas with details (title, description, members, semester, link, email)
@@ -26,7 +23,6 @@ You can view the live website here: [https://sdmcetprojectportal.rf.gd/](https:/
 - Filter and search projects by title, semester, or member count
 - Contact form for feedback or queries
 
----
 
 ## Screenshots
 
@@ -40,7 +36,6 @@ Below are some screenshots showcasing the application's features and appearance:
 | ![Contact Page](https://github.com/JoyM268/sdmcet-project-portal/blob/main/images/contact.png) | The contact page for users to send feedback or queries. |
 | ![About Us](https://github.com/JoyM268/sdmcet-project-portal/blob/main/images/about.png) | The about us page with information about the portal and team. |
 
----
 
 ## Installation & Usage
 
@@ -65,7 +60,6 @@ Below are some screenshots showcasing the application's features and appearance:
 4. **Access the portal:**
    - Open your browser and go to `http://localhost/sdmcet-project-portal/index.html`
 
----
 
 ## SQL Schema
 
@@ -92,19 +86,15 @@ CREATE TABLE ContactData (
 );
 ```
 
----
 
 ## Team Members
 - [Joy Mascarenhas](https://github.com/JoyM268)
 - [Pratham Manabasannanavar](https://github.com/PrathamManabasannanavar)
 
----
 
 ## Contact
 
 For any queries or feedback, please email: [joy.mascarenhas@outlook.com](mailto:joy.mascarenhas@outlook.com)
-
----
 
 
 
